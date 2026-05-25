@@ -1,0 +1,365 @@
+/* =============================================
+   HOME — HERO
+   ============================================= */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 85vh;
+  text-align: center;
+  background: var(--gradient-hero);
+  padding: var(--space-8) var(--space-4);
+}
+
+.hero__title {
+  font-family: var(--font-display);
+  font-size: var(--text-hero);
+  font-weight: 300;
+  letter-spacing: var(--tracking-wide);
+  margin-bottom: var(--space-4);
+}
+
+.hero__tagline {
+  font-family: var(--font-display);
+  font-size: clamp(1.125rem, 2vw + 0.5rem, 1.5rem);
+  color: var(--color-accent-dark);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  margin-bottom: var(--space-8);
+}
+
+.hero__description {
+  max-width: 540px;
+  color: var(--color-text-secondary);
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+  margin-bottom: var(--space-8);
+}
+
+.hero__scroll {
+  margin-top: var(--space-8);
+  color: var(--color-accent-light);
+}
+
+.hero__scroll svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* =============================================
+   HOME — FEATURED TRACK
+   ============================================= */
+
+.featured {
+  text-align: center;
+}
+
+.featured__label {
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+  color: var(--color-accent);
+  font-weight: 600;
+  margin-bottom: var(--space-2);
+}
+
+.featured__stat {
+  font-size: var(--text-sm);
+  color: var(--color-text-tertiary);
+  margin-top: var(--space-3);
+}
+
+/* =============================================
+   VISIONEERING PAGE
+   ============================================= */
+
+.prose {
+  max-width: var(--container-narrow);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.prose h2 {
+  margin-top: var(--space-12);
+  margin-bottom: var(--space-4);
+}
+
+.prose h3 {
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-3);
+}
+
+.prose p {
+  margin-bottom: var(--space-4);
+  max-width: none;
+}
+
+.prose blockquote {
+  margin: var(--space-8) 0;
+}
+
+.page-header {
+  text-align: center;
+  padding: var(--space-16) var(--space-4) var(--space-8);
+}
+
+.page-header h1 {
+  margin-bottom: var(--space-4);
+}
+
+.page-header p {
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--color-text-secondary);
+  font-size: var(--text-lg);
+}
+
+/* =============================================
+   MUSIC PAGE
+   ============================================= */
+
+.releases {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+/* =============================================
+   LYRICS INDEX
+   ============================================= */
+
+.lyrics-search {
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto var(--space-8);
+}
+
+.lyrics-search input {
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  padding-left: 2.5rem;
+  font-size: var(--text-base);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  background: var(--color-bg-card);
+  color: var(--color-text);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.lyrics-search input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px var(--color-accent-glow);
+}
+
+.lyrics-search svg {
+  position: absolute;
+  left: var(--space-3);
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.125rem;
+  height: 1.125rem;
+  color: var(--color-text-tertiary);
+  pointer-events: none;
+}
+
+.lyrics-list {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.lyrics-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  transition: background var(--transition-fast);
+}
+
+.lyrics-list__item:hover {
+  background: var(--color-bg-secondary);
+}
+
+.lyrics-list__title {
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.lyrics-list__album {
+  font-size: var(--text-sm);
+  color: var(--color-text-tertiary);
+}
+
+.lyrics-no-results {
+  text-align: center;
+  color: var(--color-text-tertiary);
+  padding: var(--space-8);
+  display: none;
+}
+
+/* =============================================
+   INDIVIDUAL LYRICS PAGE
+   ============================================= */
+
+.lyrics-header {
+  text-align: center;
+  margin-bottom: var(--space-8);
+}
+
+.lyrics-meta {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  margin-top: var(--space-2);
+}
+
+.lyrics-body {
+  max-width: var(--container-narrow);
+  margin: var(--space-8) auto;
+}
+
+.lyrics-text {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  white-space: pre-line;
+  color: var(--color-text);
+}
+
+.lyrics-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--container-narrow);
+  margin: var(--space-12) auto 0;
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--color-border);
+  font-size: var(--text-sm);
+}
+
+.lyrics-nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-accent-dark);
+  font-weight: 500;
+}
+
+.lyrics-nav a:hover {
+  color: var(--color-accent);
+}
+
+/* =============================================
+   ABOUT PAGE
+   ============================================= */
+
+.about-avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--color-accent-light);
+  box-shadow: var(--shadow-gold);
+  margin: 0 auto var(--space-8);
+  display: block;
+}
+
+.theme-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  justify-content: center;
+  margin-top: var(--space-6);
+}
+
+.theme-tag {
+  padding: var(--space-1) var(--space-3);
+  font-size: var(--text-sm);
+  background: var(--color-accent-glow);
+  border: 1px solid var(--color-accent-light);
+  border-radius: var(--radius-full);
+  color: var(--color-accent-dark);
+}
+
+/* =============================================
+   LINKS PAGE
+   ============================================= */
+
+.links-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-16) var(--space-4);
+  min-height: 70vh;
+}
+
+.links-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--color-accent-light);
+  box-shadow: var(--shadow-gold);
+}
+
+.links-name {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  text-align: center;
+}
+
+.links-tagline {
+  color: var(--color-text-secondary);
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+  margin-bottom: var(--space-4);
+}
+
+/* =============================================
+   PRINT STYLES
+   ============================================= */
+
+@media print {
+  .site-header,
+  .mobile-nav,
+  .site-footer,
+  .skip-link,
+  .sc-embed,
+  .sc-placeholder,
+  .lyrics-nav,
+  .btn {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+    color: black;
+    font-size: 12pt;
+  }
+
+  .page {
+    min-height: auto;
+  }
+
+  .lyrics-text {
+    font-size: 11pt;
+    line-height: 1.6;
+  }
+
+  .lyrics-header h1 {
+    font-size: 18pt;
+  }
+
+  .section {
+    padding: 0;
+  }
+
+  a[href]::after {
+    content: none;
+  }
+}

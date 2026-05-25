@@ -1,0 +1,78 @@
+:root {
+  /* === COLORS === */
+  --color-bg-primary: #FDFCFA;
+  --color-bg-secondary: #F7F4EF;
+  --color-bg-card: #FFFFFF;
+
+  --color-accent: #C9A84C;
+  --color-accent-light: #E8D5A0;
+  --color-accent-dark: #A07D2E;
+  --color-accent-glow: rgba(201, 168, 76, 0.15);
+
+  --color-text: #2C2825;
+  --color-text-secondary: #6B6560;
+  --color-text-tertiary: #9B9590;
+  --color-text-inverse: #FDFCFA;
+
+  --color-border: #E8E4DE;
+  --color-focus: #C9A84C;
+  --color-link: #A07D2E;
+  --color-link-hover: #C9A84C;
+
+  --gradient-hero: radial-gradient(ellipse at center, #FDFCFA 0%, #F0EBE0 70%, #E8D5A0 100%);
+  --gradient-section: linear-gradient(180deg, #FDFCFA 0%, #F7F4EF 100%);
+  --gradient-gold-line: linear-gradient(90deg, transparent, #C9A84C, transparent);
+
+  /* === TYPOGRAPHY === */
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: monospace;
+
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-hero: clamp(2.5rem, 5vw + 1rem, 4.5rem);
+
+  --leading-tight: 1.2;
+  --leading-normal: 1.6;
+  --leading-relaxed: 1.8;
+
+  --tracking-wide: 0.05em;
+  --tracking-wider: 0.1em;
+
+  /* === SPACING === */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* === LAYOUT === */
+  --container-max: 1200px;
+  --container-narrow: 720px;
+
+  /* === EFFECTS === */
+  --shadow-sm: 0 1px 3px rgba(44, 40, 37, 0.06);
+  --shadow-md: 0 4px 12px rgba(44, 40, 37, 0.08);
+  --shadow-lg: 0 8px 24px rgba(44, 40, 37, 0.12);
+  --shadow-gold: 0 4px 16px rgba(201, 168, 76, 0.2);
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  --transition-fast: 150ms ease;
+  --transition-base: 300ms ease;
+  --transition-slow: 500ms ease;
+  --transition-gentle: 800ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}

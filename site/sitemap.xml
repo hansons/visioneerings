@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>index.html</loc><priority>1.0</priority></url>
+  <url><loc>visioneering.html</loc><priority>0.9</priority></url>
+  <url><loc>music.html</loc><priority>0.9</priority></url>
+  <url><loc>about.html</loc><priority>0.8</priority></url>
+  <url><loc>links.html</loc><priority>0.7</priority></url>
+  <url><loc>lyrics/index.html</loc><priority>0.8</priority></url>
+  <url><loc>lyrics/the-everlasting-now.html</loc><priority>0.6</priority></url>
+  <url><loc>lyrics/ascension-song.html</loc><priority>0.6</priority></url>
+  <url><loc>lyrics/needed.html</loc><priority>0.6</priority></url>
+  <url><loc>lyrics/whom-do-you-seek.html</loc><priority>0.6</priority></url>
+  <url><loc>lyrics/sons-of-god-light-of-life.html</loc><priority>0.6</priority></url>
+</urlset>

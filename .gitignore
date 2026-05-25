@@ -1,0 +1,21 @@
+# Editor / tooling
+.vscode/
+.claude/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Local source archives (Google Drive exports — not deployed)
+Images-20260307T224236Z-3-001/
+Lyrics-20260307T224249Z-3-001/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Build artifacts
+node_modules/
+dist/
+.cache/
