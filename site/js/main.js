@@ -65,33 +65,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 2000);
   }
 
-  // --- Lazy SoundCloud Embed Loading ---
-  function loadSoundCloudEmbed(placeholder) {
-    const iframe = document.createElement('iframe');
-    iframe.src = placeholder.dataset.src;
-    iframe.width = '100%';
-    iframe.height = placeholder.dataset.height || '450';
-    iframe.scrolling = 'no';
-    iframe.frameBorder = 'no';
-    iframe.setAttribute('allow', 'autoplay');
-    iframe.setAttribute('loading', 'lazy');
-    iframe.setAttribute('title', placeholder.dataset.title || 'SoundCloud Player');
-
-    const wrapper = document.createElement('div');
-    wrapper.className = 'sc-embed';
-    wrapper.appendChild(iframe);
-
-    placeholder.replaceWith(wrapper);
-  }
-
-  document.querySelectorAll('.sc-placeholder').forEach(placeholder => {
-    placeholder.addEventListener('click', () => loadSoundCloudEmbed(placeholder));
-    placeholder.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        loadSoundCloudEmbed(placeholder);
-      }
-    });
-  });
-
 });

@@ -332,37 +332,6 @@
   width: 100%;
 }
 
-/* Lazy-load placeholder */
-.sc-placeholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-3);
-  padding: var(--space-8);
-  background: var(--color-bg-secondary);
-  border: 1px dashed var(--color-accent-light);
-  border-radius: var(--radius-md);
-  cursor: pointer;
-  transition: background var(--transition-fast), border-color var(--transition-fast);
-  margin-top: var(--space-4);
-}
-
-.sc-placeholder:hover {
-  background: var(--color-accent-glow);
-  border-color: var(--color-accent);
-}
-
-.sc-placeholder__icon {
-  width: 2rem;
-  height: 2rem;
-  color: var(--color-accent);
-}
-
-.sc-placeholder__text {
-  font-weight: 500;
-  color: var(--color-accent-dark);
-}
-
 /* =============================================
    LINK BUTTONS (for links page)
    ============================================= */
