@@ -1,6 +1,6 @@
 # Visioneering
 
-Source for [visioneering.org](https://visioneering.org) — the home of MrLucky1x and the Visioneering project.
+Source for [visioneerings.org](https://visioneerings.org) — the home of MrLucky1x and the Visioneering project.
 
 ## Structure
 
@@ -12,14 +12,14 @@ Source for [visioneering.org](https://visioneering.org) — the home of MrLucky1
 
 The `.github/workflows/pages.yml` workflow uploads the contents of `site/` to GitHub Pages on every push to `main`.
 
-The `site/CNAME` file binds the deployment to the `visioneering.org` domain. DNS for `visioneering.org` must point to GitHub Pages:
+The `site/CNAME` file binds the deployment to the `visioneerings.org` domain. DNS for `visioneerings.org` must point to GitHub Pages:
 
-- Apex `visioneering.org` → A records:
+- Apex `visioneerings.org` → A records:
   - `185.199.108.153`
   - `185.199.109.153`
   - `185.199.110.153`
   - `185.199.111.153`
-- `www.visioneering.org` → CNAME `hansons.github.io`
+- `www.visioneerings.org` → CNAME `hansons.github.io`
 
 ## Local preview
 
